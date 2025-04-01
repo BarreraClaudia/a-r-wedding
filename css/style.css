@@ -1,0 +1,328 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  font-family: 'Prata', serif;
+  font-size: 16px;
+  color: #000;
+  background-color: #faf9f6;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* align-content: center; */
+}
+
+nav {
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+}
+
+.name h3 {
+  font-size: 40px;
+  font-family: 'Imperial Script', cursive;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1em;
+  list-style: none;
+}
+
+.nav-links a {
+  display: block;
+  padding: 10px 16px;
+  color: #111;
+  text-decoration: none;
+  transition: all ease-in-out 100ms;
+}
+
+.nav-links a:hover {
+  border-bottom: #111 solid 2px;
+  border-top: #111 solid 2px;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+  width: 34px;
+}
+
+.hamburger .bar {
+  flex-basis: 100%;
+  height: 4px;
+  background-color: #111;
+  margin: 3px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slideshow h1 {
+  text-align: center;
+  font-family: 'Imperial Script', cursive;
+  font-size: 90px;
+  color: #faf9f6;
+  padding: 0 10px;
+}
+
+.slideshow {
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  animation: slideshow 15s ease-in-out infinite;
+}
+
+@keyframes slideshow {
+  0% {
+    background-image: url('../img/hands.jpg');
+  }
+  33% {
+    background-image: url('../img/gold-rings.jpg');
+  }
+  66% {
+    background-image: url('../img/church.jpg');
+  }
+  100% {
+    background-image: url('../img/hands.jpg');
+  }
+}
+
+.save-the-date {
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3em;
+  padding: 30px;
+  margin: 60px 0;
+  text-align: center;
+}
+
+.save-the-date .date {
+  font-size: 30px;
+}
+
+.save-the-date .couple {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+  padding: 0 20px;
+  font-family: 'Imperial Script', cursive;
+  font-size: 70px;
+}
+
+.countdown {
+  min-height: 50vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(../img/church.jpg);
+  background-size: cover;
+  background-position: top;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #faf9f6;
+  gap: 2em;
+  padding: 30px 0;
+}
+
+.countdown h2 {
+  font-size: 50px;
+  text-align: center;
+}
+
+.time h3 {
+  font-size: 70px;
+  /* font-weight: 100; */
+}
+
+.time {
+  text-align: center;
+}
+
+.timebox {
+  display: flex;
+  gap: 2em;
+}
+
+footer {
+  min-height: 60px;
+  background-color: #111;
+  color: #faf9f6;
+  text-align: center;
+  align-content: center;
+  font-size: 12px;
+}
+
+footer a {
+  color: #faf9f6;
+}
+
+.schedule h1 {
+  font-size: 50px;
+  text-align: center;
+}
+
+.schedule-box {
+  text-align: center;
+}
+
+.schedule-box h2 {
+  font-size: 24px;
+  padding: 5px;
+}
+
+.schedule-box h3 {
+  font-size: 18px;
+  padding: 5px;
+}
+
+.schedule-box a {
+  display: inline-block;
+  padding: 5px;
+  text-decoration: none;
+  color: #111;
+  background-color: #eee;
+}
+
+.schedule-box a:hover {
+  border-bottom: #111 solid 2px;
+}
+
+.schedule-container {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 3em;
+  margin: 30px 20px;
+}
+
+.dress-code {
+  text-align: center;
+  min-height: 200px;
+  align-content: center;
+  padding: 10px;
+}
+
+.dress-code h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.dress-code-pics {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 2em;
+  margin-bottom: 40px;
+}
+
+.gallery-container {
+  max-width: 1224px;
+  width: 90%;
+  margin: auto;
+  padding: 40px 0;
+}
+
+.gallery-container h1 {
+  font-size: 40px;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.photo-gallery {
+  display: flex;
+  gap: 20px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.photo img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.coming-soon {
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 773px) {
+  nav {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .hamburger {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .nav-links {
+    display: none;
+    flex-basis: 100%;
+    flex-wrap: wrap;
+  }
+
+  .nav-links li {
+    flex-basis: 100%;
+  }
+
+  .nav-links a {
+    text-align: center;
+    font-size: 28px;
+    padding: 30px 16px;
+  }
+
+  .slideshow {
+    background-size: contain;
+    height: calc(0.664 * 100vw);
+  }
+
+  .slideshow h1 {
+    font-size: 50px;
+  }
+
+  .save-the-date .couple {
+    flex-direction: column;
+    gap: 0.5em;
+  }
+
+  .timebox {
+    flex-direction: column;
+  }
+
+  .schedule-container {
+    flex-direction: column;
+  }
+  .schedule h1 {
+    margin-top: 40px;
+  }
+
+  .dress-code-pics {
+    flex-direction: column;
+  }
+
+  .photo-gallery {
+    flex-direction: column;
+  }
+}
