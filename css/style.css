@@ -13,7 +13,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  /* align-content: center; */
 }
 
 nav {
@@ -61,13 +60,7 @@ nav {
   margin: 3px;
 }
 
-header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.slideshow h1 {
+.hero h1 {
   text-align: center;
   font-family: 'Imperial Script', cursive;
   font-size: 90px;
@@ -75,35 +68,32 @@ header {
   padding: 0 10px;
 }
 
-.slideshow {
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100vw;
   height: 100vh;
+  background-image: url(../img/couple2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  animation: slideshow 15s ease-in-out infinite;
 }
 
-@keyframes slideshow {
-  0% {
-    background-image: url('../img/hands.jpg');
-  }
-  33% {
-    background-image: url('../img/gold-rings.jpg');
-  }
-  66% {
-    background-image: url('../img/church.jpg');
-  }
-  100% {
-    background-image: url('../img/hands.jpg');
-  }
+.video-date-container {
+  min-height: 100vh;
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 100px 50px;
+  margin: 200px 0;
 }
 
-.save-the-date {
+.date-container {
   min-height: 50vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   gap: 3em;
   padding: 30px;
@@ -111,25 +101,23 @@ header {
   text-align: center;
 }
 
-.save-the-date .date {
+.date-container .couple {
+  padding: 0 20px;
+  font-family: 'Imperial Script', cursive;
+  font-size: 80px;
+}
+
+.date-container .date {
   font-size: 30px;
 }
 
-.save-the-date .couple {
-  display: flex;
-  align-items: center;
-  gap: 2em;
-  padding: 0 20px;
-  font-family: 'Imperial Script', cursive;
-  font-size: 70px;
-}
-
 .countdown {
-  min-height: 50vh;
+  min-height: 100vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url(../img/church.jpg);
+    url(../img/couple3.jpg);
   background-size: cover;
-  background-position: top;
+  background-repeat: no-repeat;
+  background-position: bottom;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -146,7 +134,6 @@ header {
 
 .time h3 {
   font-size: 70px;
-  /* font-weight: 100; */
 }
 
 .time {
@@ -265,7 +252,7 @@ footer a {
 }
 
 /* Responsive Design */
-@media (max-width: 773px) {
+@media (max-width: 850px) {
   nav {
     flex-wrap: wrap;
     flex-direction: row;
@@ -293,18 +280,18 @@ footer a {
     padding: 30px 16px;
   }
 
-  .slideshow {
-    background-size: contain;
-    height: calc(0.664 * 100vw);
-  }
-
-  .slideshow h1 {
+  .hero h1 {
     font-size: 50px;
   }
 
-  .save-the-date .couple {
-    flex-direction: column;
-    gap: 0.5em;
+  video {
+    width: 320px;
+  }
+
+  .video-date-container {
+    flex-direction: column-reverse;
+    align-items: center;
+    margin: 0;
   }
 
   .timebox {
