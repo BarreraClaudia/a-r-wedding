@@ -2,6 +2,10 @@
 
 A simple and elegant wedding website.
 
+See [here](https://alexia-and-ramon.com/index.html).
+
+![Screenshot](./img/website-screenshot.png)
+
 ## Tech Stack
 
 <!-- Badges from https://github.com/Ileriayo/markdown-badges -->
@@ -14,6 +18,4 @@ A simple and elegant wedding website.
 
 ## Image Credits
 
-Images from [Unsplash](https://unsplash.com/)
-
-Icons / Images from [Freepik](https://www.freepik.com/)
+Icons on 'Schedule' page & Images on 'Dress Code' page from [Freepik](https://www.freepik.com/)
