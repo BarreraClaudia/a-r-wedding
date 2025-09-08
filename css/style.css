@@ -252,6 +252,33 @@ footer a {
   object-fit: cover;
 }
 
+.registry {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 10px 20px;
+}
+
+.registry p {
+  max-width: 60ch;
+  text-align: center;
+}
+
+.registry a {
+  padding: 12px 24px;
+  text-decoration: none;
+  color: #111;
+  background-color: #eee;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.registry a:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
 .coming-soon {
   text-align: center;
 }
