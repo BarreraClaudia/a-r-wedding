@@ -13,6 +13,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  line-height: 1.5;
 }
 
 nav {
@@ -335,16 +336,17 @@ footer a {
 }
 
 .dress-code h1 {
-  font-size: 40px;
+  font-size: 30px;
   margin-bottom: 20px;
 }
 
 .dress-code-pics {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  gap: 2em;
-  margin-bottom: 40px;
+  margin: 0 auto 100px auto;
+}
+
+.dress-code-pics img {
+  max-width: 800px;
+  width: 100%;
 }
 
 .gallery-container {
@@ -355,7 +357,7 @@ footer a {
 }
 
 .gallery-container h1 {
-  font-size: 40px;
+  font-size: 30px;
   margin-bottom: 2rem;
   text-align: center;
 }
@@ -404,6 +406,18 @@ footer a {
 .registry a:hover {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
   transform: translateY(-2px);
+}
+
+.faq {
+  align-self: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.faq h1 {
+  text-align: center;
+  margin-bottom: 50px;
 }
 
 .coming-soon {
