@@ -21,7 +21,6 @@ nav {
   flex-direction: column;
   align-items: center;
   gap: 0.5em;
-  /* border-bottom: 2px solid #eee; */
   box-shadow: 0 4px 20px 2px rgba(0, 0, 0, 0.1);
 }
 
@@ -184,6 +183,7 @@ footer a {
   animation: movedown 1s linear forwards;
   opacity: 0;
 }
+
 @keyframes movedown {
   0% {
     opacity: 1;
@@ -219,18 +219,21 @@ footer a {
   box-shadow: 5px 5px 20px 3px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
+
 .text-box h2 {
   margin-bottom: 10px;
 }
+
 .left-container {
   left: 0;
 }
+
 .right-container {
   left: 50%;
 }
+
 .timeline-container img {
   padding: 2px;
-
   position: absolute;
   width: 40px;
   right: -20px;
@@ -238,13 +241,13 @@ footer a {
   z-index: 10;
   background-color: white;
   box-shadow: 0 0 8px 5px rgba(0, 0, 0, 0.1);
-
   border-radius: 5px;
 }
 
 .right-container img {
   left: -20px;
 }
+
 .timeline::after {
   content: '';
   position: absolute;
@@ -258,6 +261,7 @@ footer a {
 
   animation: moveline 6s linear forwards;
 }
+
 @keyframes moveline {
   0% {
     height: 0;
@@ -278,6 +282,7 @@ footer a {
   border-left: 15px solid #fff;
   right: -15px;
 }
+
 .right-container-arrow {
   height: 0;
   width: 0;
@@ -390,7 +395,8 @@ footer a {
   padding: 12px 24px;
   text-decoration: none;
   color: #111;
-  background-color: #eee;
+  background-color: #fff;
+  border-radius: 5px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease-in-out;
 }
@@ -449,13 +455,6 @@ footer a {
 
   .timebox {
     flex-direction: column;
-  }
-
-  .schedule-container {
-    flex-direction: column;
-  }
-  .schedule h1 {
-    margin-top: 40px;
   }
 
   .dress-code-pics {
