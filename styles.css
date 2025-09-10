@@ -719,6 +719,7 @@ FAQ's Page
 
 .faq h2 {
   font-size: var(--step-1);
+  margin-bottom: var(--space-2xs);
 }
 
 /*
