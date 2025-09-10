@@ -1,13 +1,7 @@
-const hamburger = document.querySelector('.hamburger');
-const navLinks = document.querySelector('.nav-links');
-let menuOpen = false;
+const navbarToggle = document.querySelector('.navbar-toggle');
+const navbarList = document.querySelector('.navbar-list');
 
-hamburger.addEventListener('click', () => {
-  if (menuOpen === false) {
-    navLinks.style.display = 'block';
-    menuOpen = true;
-  } else if (menuOpen === true) {
-    navLinks.style.display = 'none';
-    menuOpen = false;
-  }
+navbarToggle.addEventListener('click', () => {
+  navbarToggle.classList.toggle('active');
+  navbarList.classList.toggle('active');
 });
