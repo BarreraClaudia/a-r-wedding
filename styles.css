@@ -836,4 +836,8 @@ Media Queries
   .column-container {
     flex-direction: column;
   }
+  .column-2,
+  .column-4 {
+    margin-top: var(--space-2xs);
+  }
 }
