@@ -631,13 +631,18 @@ Gallery Page
 
 .photo-gallery {
   display: flex;
-  gap: 20px;
+  gap: var(--space-2xs);
+}
+
+.column-container {
+  display: flex;
+  gap: var(--space-2xs);
 }
 
 .column {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: var(--space-2xs);
 }
 
 .photo img {
@@ -823,5 +828,12 @@ Media Queries
     border-right: 15px solid #fff;
     border-left: 0;
     left: -15px;
+  }
+}
+
+/* photo gallery */
+@media screen and (max-width: 950px) {
+  .column-container {
+    flex-direction: column;
   }
 }
