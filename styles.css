@@ -838,6 +838,6 @@ Media Queries
   }
   .column-2,
   .column-4 {
-    margin-top: var(--space-2xs);
+    margin-top: var(--space-3xs);
   }
 }
