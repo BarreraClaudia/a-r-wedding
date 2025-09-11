@@ -2,7 +2,15 @@
 
 A simple and elegant wedding website.
 
-![Screenshot](assets/imgs/website-screenshot.png)
+<img src="assets/imgs/website-screenshot.png" width="500">
+
+## Inform your guests with the schedule, dress code, hotel, registry, and FAQ's.
+
+<img src="assets/imgs/schedule-screenshot.png" width="500">
+
+## Show off your engagement photo shoot in the gallery!
+
+<img src="assets/imgs/gallery-screenshot.png" width="500">
 
 ## Tech Stack
 
