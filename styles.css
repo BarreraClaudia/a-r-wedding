@@ -593,27 +593,6 @@ Dress Code Page
 
 /*
 ~~~~
-Hotel Page
-~~~~
-*/
-
-.coming-soon {
-  grid-column: content;
-
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.coming-soon h1 {
-  font-size: var(--step-2);
-  text-align: center;
-}
-
-/*
-~~~~
 Gallery Page
 ~~~~
 */
@@ -654,11 +633,12 @@ Gallery Page
 
 /*
 ~~~~
-Registry Page
+Registry  & Hotel Pages
 ~~~~
 */
 
-.registry {
+.registry,
+.hotel {
   grid-column: content;
 
   min-height: 100vh;
@@ -671,16 +651,19 @@ Registry Page
   gap: var(--space-m);
 }
 
-.registry h1 {
+.registry h1,
+.hotel h1 {
   font-size: var(--step-2);
   text-align: center;
 }
 
-.registry p {
+.registry p,
+.hotel p {
   text-align: center;
 }
 
-.registry a {
+.registry a,
+.hotel a {
   padding: 12px 24px;
   text-decoration: none;
   text-align: center;
@@ -692,7 +675,8 @@ Registry Page
   transition: all 0.3s ease-in-out;
 }
 
-.registry a:hover {
+.registry a:hover,
+.hotel a:hover {
   box-shadow: 0 10px 20px 2px rgba(0, 0, 0, 0.2);
   transform: translateY(-2px);
 }
